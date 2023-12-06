@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #144272;
+  overflow-y: scroll;
+  overflow-x: none;
+}
+.navbar {
+  --bs-navbar-toggler-border-color: none;
+  --bs-navbar-toggler-border-radius: none;
+  --bs-navbar-toggler-focus-width: 0;
+  --bs-navbar-toggler-border-color: none;
+}
+#navbar {
+  background: rgba(20, 66, 114, 0.5);
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0px 0.5px #fff;
+}
+#nav-logo {
+  width: 100px;
+  height: auto;
+}
+.navbar-collapse {
+  flex-grow: inherit;
+  text-align: center;
+}
+.nav-link {
+  color: #fff;
+  font-weight: 600;
+}
+.nav-link:hover {
+  color: #fff;
+}
+.nav-item {
+  margin: 0 1em;
+}
+.img-slider,
+.img-jumbotron {
+  min-height: 450px;
+  max-height: 550px;
+  filter: brightness(65%);
+}
+.wrapper-slider {
+  transform: translate(-50%, -50%);
+}
+.title-slider {
+  font-size: 2.75em;
+}
+.btn-slider {
+  background-color: #2c74b3;
+  padding: 0.5em 2em;
+  margin: 1.5em auto 0 auto;
+}
+.btn-slider:hover {
+  background-color: #144272;
+}
+.hamburger-icon,
+.search-icon,
+.close-btn {
+  color: #fff;
+  cursor: pointer;
+}
+.search-bar {
+  right: 6em;
+  top: 20px;
+  width: 12.5em;
+}
+.desc-page {
+  margin: 3em 0;
+}
+.desc-page h1 {
+  font-size: 44px;
+}
+.reveal {
+  position: relative;
+  transform: translateX(-60px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.reveal.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+.wrapper-card {
+  border-radius: 20px;
+  cursor: pointer;
+}
+.wrapper-card img {
+  border-radius: 15px;
+  object-fit: cover;
+  filter: brightness(65%);
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.4s;
+}
+.wrapper-card:hover img {
+  transform: scale(1.15);
+}
+.title-destination .h3,
+.title-culinary .h3 {
+  font-size: 1.3em;
+  color: #fff;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  background-color: #205295;
+  padding: 2em;
+}
+.img-footer {
+  max-width: 12.5em;
+}
+
+.modal-header,
+.modal-body {
+  background-color: #2c74b3;
+}
+.close-btn {
+  font-size: 1.5em;
+  top: 1em;
+  right: 1em;
+  background-color: transparent;
+}
+.btn-tabs {
+  background-color: transparent !important;
+  border-style: none;
+  padding: 0.5em;
+  max-width: 10em;
+  font-size: 1.2em;
+}
+.btn-tabs.active {
+  background-color: #2c74b3 !important;
+}
+/*  */
+/* media queri */
+@media (max-width: 767.98px) {
+  .navbar-nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: rgba(20, 66, 114, 0.9);
+    height: 100vh;
+  }
+  .nav-item {
+    padding: 10px 0;
+  }
+  .nav-link {
+    font-size: 1.6em;
+  }
+  .title-slider {
+    font-size: 1.6em;
+  }
+  .desc-page h1 {
+    font-size: 2em;
+  }
+  .legal-footer {
+    width: 100% !important;
+  }
+}
