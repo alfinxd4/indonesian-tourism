@@ -138,6 +138,11 @@ body {
 .btn-tabs.active {
   background-color: #2c74b3 !important;
 }
+.price-trip {
+  width: max-content;
+  height: max-content;
+  position: relative;
+}
 /*  */
 /* media queri */
 @media (max-width: 767.98px) {
